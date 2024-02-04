@@ -1,0 +1,228 @@
+/* SeatsGrid.css */
+
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 10px;
+    width: 500px;
+    
+  }
+
+  .main {
+    display:flex;
+    flex-direction: row;
+    margin-top: 30px;
+    font-family: Georgia, serif;
+  }
+
+  .box {
+    height: 25px;
+    width: 25px; 
+  }
+
+  .box--red {
+      background-color: red;
+  }
+
+  .box--yellow {
+      border: 2px solid orange;
+      margin-left: 100px;
+  }
+
+  .box--green {
+      background-color: green;
+      margin-left: 100px;
+  }
+
+  .p {
+    margin-left: 10px;
+  }
+
+  .seat {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 2px solid orange;
+    
+  }
+  
+  .available {
+    background-color: white;
+  }
+  
+  .seat.reserved {
+    background-color: red;
+  }
+  
+  .seat.selected {
+    background-color:green;
+  }
+  
+  .seat:hover {
+    background-color: #c0c0c0;
+  }
+
+  .heading {
+    margin-left: 400px;
+  }
+  .head {
+    margin-left: 85px;
+    margin-top: 30px;
+    color: rgb(7, 20, 143);
+    font-weight: 700;
+    font-family: Georgia, serif;
+  }
+  .label {
+    margin-top: 20px;
+    font-weight: 700;
+  }
+
+  #sri {
+    margin-left: 140px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+  }
+
+  .description {
+    margin-top: 30px;
+  }
+
+  .detail {
+    margin-top: 20px;
+    font-size: 18px;
+    
+  }
+
+  .button {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: 600;
+    background: #44403a none repeat scroll 0 0;
+    border: none;
+    color: #fff;
+  }
+
+  .sri {
+    color: rgb(245, 47, 12);
+    font-weight: 700;
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 797px) {
+
+
+
+    .label {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  
+    #sri {
+      margin-left: 40px;
+      border: 2px solid black;
+      border-radius: 10px;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      width: 150px;
+    }
+  
+
+    .seats-grid {
+      width: 100%;
+      margin-left: 0px;
+      gap: 10px;
+      padding: 20px;
+     
+    }
+  
+    .main {
+      flex-direction: row; 
+      align-items: center;
+      margin-top: 20px;
+      /* padding: 10px; */
+    }
+
+    .heading {
+      margin-left:0px;
+    }
+
+    
+    .box--red {
+          background-color: red;
+          margin-left: 20px;
+      }
+
+      .box--green {
+          background-color: green;
+          margin-left: 20px;
+      }
+      
+      .box--yellow {
+        border: 2px solid orange;
+        margin-left: 20px !important;
+    }
+
+      .p {
+        margin-top: 18px;
+      }
+
+    .head {
+      margin-left: 85px;
+      margin-top: 30px;
+      color: rgb(7, 20, 143);
+      font-weight: 700;
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+
+  
+    .description h4 {
+      margin-top: 30px;
+      margin-left: 30px;
+      font-size: 18px !important;
+    }
+  
+    .detail {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 15px;
+      
+    }
+  
+    .button {
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 10px;
+      padding: 8px;
+      font-weight: 600;
+      background: #44403a none repeat scroll 0 0;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+    }
+
+  }
+
+
+
+  
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    section {
+      min-height: 60vh;
+    }
+
+  
+    
+  }

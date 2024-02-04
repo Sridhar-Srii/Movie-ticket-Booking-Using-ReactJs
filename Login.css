@@ -1,0 +1,23 @@
+.container {
+    border: none;
+}
+.img-fluid {
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 797px) {
+
+
+    .img-fluid {
+        margin-left: 0px;
+        /* margin-bottom: 40px; */
+    }
+    .container {
+        border: none;
+        margin: 0px;
+    }
+
+
+}
